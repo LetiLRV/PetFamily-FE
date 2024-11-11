@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Family</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/icon.png">
+
+    <!-- Fontes -->
+    <link rel="stylesheet" href="https://use.typekit.net/jzf8mlw.css">
+
+</head>
+<body>
+    <div class="logo">
+        <h1> <img src="image/logo.png" alt="Pet Family"> <br> Pet Family</h1>
+    </div>
+
+    <div class="cadastro">
+        <header>    
+    <h2>Cadastre seu pet!</h2>
+        </header>
+        <form>
+
+            <!-- Cadastro nome -->
+            <label class="title-label">Nome <br>
+            <input type="text" placeholder=" Digite o nome do animal" name="Nome" class="input-dados">
+            </label>
+
+            <!-- Cadastro idade -->
+            <label class="title-label">Idade <br>
+            <input type="number" placeholder=" Digite a idade do animal" name="Idade" class="input-dados">
+            </label>
+
+            <!-- Cadastro porte -->
+                <label class="title-label">Porte <br>
+
+                <label class="text-label">Grande
+                    <input type="radio" name="porte" value="grade" class="input-radio">
+                </label>
+                
+                <label class="text-label">Médio
+                    <input type="radio" name="porte" value="medio" class="input-radio">
+                </label>
+                
+                <label class="text-label">Pequeno
+                    <input type="radio" name="porte" value="pequeno" class="input-radio">
+                </label>
+            </label> 
+            
+            <!-- Cadastro sexo -->
+            <label class="title-label">Sexo <br>
+            <label class="text-label">Masculino
+                <input type="radio" name="genero" value="masculino" class="input-radio">
+            </label>
+            
+            <label class="text-label">Feminino
+                <input type="radio" name="genero" value="feminino" class="input-radio">
+        </label>  
+    </label>  
+
+          <!-- Cadastro especie -->
+        <label class="title-label">Especie <br>
+            <select class="input-dados">
+                <option value="">Selecione uma opção</option>
+                <option value="Cachorro">Cachorro</option>
+                <option value="Ave">Ave</option>
+                <option value="Gato">Gato</option>
+            </select>
+        </label>
+
+        <!-- Cadastro comportamento -->
+        <label class="title-label">Comportamento <br>
+        <select class="input-dados">
+            <option value="">Selecione uma opção</option>
+            <option value="calmo">Calmo</option>
+            <option value="bravo">Bravo</option>
+            <option value="eletrico">Eletrico</option>
+            
+        </select>
+    </label>
+    <div class="submit-container">
+        <button type="submit" class="submit">Enviar</button>
+    </div>
+    </form>
+</div>
+    
+
+</body>
+</html>

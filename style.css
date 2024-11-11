@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.RooneySansBlack{
+font-family: "rooney-sans", sans-serif;
+font-weight: 900;
+font-style: normal;
+}
+
+.RooneySansMedium{
+font-family: "rooney-sans", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+.RooneySansBold{
+font-family: "rooney-sans", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.RooneySansLight{
+font-family: "rooney-sans", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+label{
+    display: block;
+    margin: 5px;
+    color:#e98e33
+    
+}
+.submit-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2em;
+}
+
+.submit{
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color: #FFB166;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    font-family: "rooney-sans";
+    font-weight: 500;
+}
+
+body{
+    background-color: #FA9CB4;
+}
+
+h2{
+    color: #FFB166;
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+    font-family:"rooney-sans";
+    font-weight: 700;
+}
+
+h1{
+    font-family: "rooney-sans";
+    font-size:50px;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.cadastro{
+    border-radius: 30px;
+    width: 45vw;
+    height: 96vh;
+    background-color: #FFDCD6;
+    position: absolute;
+    right: 10vw;
+    top:2vh;
+    font-family:"rooney-sans";
+    font-weight: 500;
+    overflow-y: auto;
+
+}
+
+.cadastro::-webkit-scrollbar{
+    width: 10px; 
+    height: 10px;
+}
+
+.cadastro::-webkit-scrollbar-track {
+    background: #FFB166; 
+    border-radius: 5px;
+    margin-top: 5vw;
+    margin-bottom: 5vh;
+}
+
+.cadastro::-webkit-scrollbar-thumb {
+    background-color: #db7790;
+    border-radius: 10px;
+    border: 2px solid #FFB166; 
+}
+
+.logo{
+    color: white;
+    position: absolute;
+    left: 18vw;
+    top: 33vh;
+    
+}
+
+.title-label{
+    font-size: 22px;
+    margin-top: 15px;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.text-label{
+    font-size: 19px;
+    color: #db7790;
+    display: inline-block;
+}
+
+.input-dados{
+    border: none;
+    background-color: white;
+    width: 250px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor:pointer;
+    font-family:"rooney-sans";
+    font-weight: 300;
+}
+
+.input-radio{
+    appearance: none;
+    border: 1px solid #e9577c ;
+    border-radius: 100%;
+    background-color: white;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    content: url(image/logo.png);
+    
+}
+
+.input-radio:checked{
+    background-color: #FA9CB4;
+    border-color: #e9577c;
+    content: url(image/teste.png);
+}
+
+
+select{
+    outline: 0;
+}
