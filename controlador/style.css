@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.RooneySansBlack{
+    font-family: "rooney-sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+    
+.RooneySansMedium{
+    font-family: "rooney-sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+    
+.RooneySansBold{
+    font-family: "rooney-sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+    
+.RooneySansLight{
+    font-family: "rooney-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body{
+    background-color:#db7790; ;
+} 
+
+.profile{
+    background-color: #ffeae6;
+    display: flex;
+    width: 2em;
+    height: 2em;
+  }

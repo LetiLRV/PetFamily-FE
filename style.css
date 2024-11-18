@@ -78,13 +78,15 @@ h1{
     border-radius: 30px;
     width: 40vw;
     height: 96vh;
-    background-color: #FFDCD6;
+    background-color: #ffeae6;
     position: absolute;
     right: 15vw;
     top:2vh;
     font-family:"rooney-sans";
     font-weight: 500;
     overflow-y: auto;
+    animation-duration: 1.7s;
+    animation-name: slidein;
 
 }
 
@@ -111,7 +113,7 @@ h1{
     position: absolute;
     left: 18vw;
     top: 33vh;
-    
+
 }
 
 .title-label{
@@ -143,21 +145,31 @@ h1{
     appearance: none;
     border: 1px solid #e9577c ;
     border-radius: 100%;
-    background-color: white;
     width: 19px;
     height: 19px;
     cursor: pointer;
-    content: url(image/logo.png);
+    content: url(image/inputRadio.png);
     
 }
 
 .input-radio:checked{
-    background-color: #FA9CB4;
     border-color: #e9577c;
-    content: url(image/teste.png);
+    content: url(image/inputRadio_checked.png);
 }
 
 
 select{
     outline: 0;
 }
+
+
+@keyframes slidein {
+    from {
+      right: -50%;  
+    }
+  
+    to {
+      margin-right:0;      
+    }
+  }
+

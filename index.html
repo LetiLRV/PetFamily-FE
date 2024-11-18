@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Family</title>
+    <title>Pet Family | Cadastro</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="image/icon.png">
 
@@ -20,7 +20,7 @@
         <header>    
     <h2>Cadastre seu pet!</h2>
         </header>
-        <form>
+        <form action="controlador/index.html" method="get">
 
             <!-- Cadastro nome -->
             <label class="title-label">Nome <br>
@@ -72,7 +72,13 @@
 
         <!-- Cadastro raça -->
         <label class="title-label">Raça <br>
-            <input type="text" placeholder=" Digite a raça" name="raca" class="input-dados">
+            <select class="input-dados">
+                <option value="">Selecione uma opção</option>
+                <option value="Chetos">Chetos</option>
+                <option value="Doritos">Doritos</option>
+                <option value="Crocatissimo">Crocatissimo</option>
+            </select>
+        </label>
 
         </label>
 
