@@ -18,85 +18,95 @@
 
     <div class="cadastro">
         <header>    
-    <h2>Cadastre seu pet!</h2>
+    <h2>Cadastre seu pet</h2>
         </header>
         <form action="controlador/index.html" method="get">
 
-            <!-- Cadastro nome -->
-            <label class="title-label">Nome <br>
+        <!-- Cadastro nome -->
+        <label class="title-label">Nome <br>
             <input type="text" placeholder=" Digite o nome do animal" name="Nome" class="input-dados">
-            </label>
-
-            <!-- Cadastro idade -->
-            <label class="title-label">Data de Nascimento <br>
-            <input type="date" placeholder=" Digite a idade do animal" name="Idade" class="input-dados">
-            </label>
-
-            <!-- Cadastro porte -->
-                <label class="title-label">Porte <br>
-
-                <label class="text-label">Grande
-                    <input type="radio" name="porte" value="grade" class="input-radio">
-                </label>
-                
-                <label class="text-label">Médio
-                    <input type="radio" name="porte" value="medio" class="input-radio">
-                </label>
-                
-                <label class="text-label">Pequeno
-                    <input type="radio" name="porte" value="pequeno" class="input-radio">
-                </label>
-            </label> 
+        </label>
             
-            <!-- Cadastro sexo -->
-            <label class="title-label">Sexo <br>
-            <label class="text-label">Masculino
-                <input type="radio" name="genero" value="masculino" class="input-radio">
-            </label>
-            
-            <label class="text-label">Feminino
-                <input type="radio" name="genero" value="feminino" class="input-radio">
-        </label>  
-    </label>  
+        <!-- Cadastro especie -->
+        <label class="title-label">Seu Pet<br>
 
-          <!-- Cadastro especie -->
-        <label class="title-label">Especie <br>
             <select class="input-dados">
                 <option value="">Selecione uma opção</option>
                 <option value="Cachorro">Cachorro</option>
                 <option value="Ave">Ave</option>
                 <option value="Gato">Gato</option>
             </select>
+
         </label>
 
-
+        <!-- Cadastro idade -->
+        <label class="title-label">Data de Nascimento <br>
+            <input type="date" placeholder=" Digite a idade do animal" name="Idade" class="input-dados">
+        </label>
+            
         <!-- Cadastro raça -->
         <label class="title-label">Raça <br>
+
             <select class="input-dados">
                 <option value="">Selecione uma opção</option>
                 <option value="Chetos">Chetos</option>
                 <option value="Doritos">Doritos</option>
                 <option value="Crocatissimo">Crocatissimo</option>
             </select>
-        </label>
 
         </label>
+
+        <!-- Cadastro sexo -->
+        <label class="title-label">Sexo <br>
+    
+            <label class="text-label">Masculino
+                <input type="radio" name="genero" value="masculino" class="input-radio">
+            </label>
+                
+            <label class="text-label">Feminino
+                <input type="radio" name="genero" value="feminino" class="input-radio">
+            </label>  
+    
+        </label>  
+
+        <!-- Cadastro porte -->
+        <label class="title-label">Tamanho <br>
+
+            <label class="text-label">Grande
+                <input type="radio" name="porte" value="grade" class="input-radio">
+            </label>
+                    
+            <label class="text-label">Médio
+                <input type="radio" name="porte" value="medio" class="input-radio">
+            </label>
+                    
+            <label class="text-label">Pequeno
+                <input type="radio" name="porte" value="pequeno" class="input-radio">
+            </label>
+                    
+        </label> 
+                
+
 
         <!-- Cadastro comportamento -->
         <label class="title-label">Comportamento <br>
-        <select class="input-dados">
-            <option value="">Selecione uma opção</option>
-            <option value="calmo">Calmo</option>
-            <option value="bravo">Bravo</option>
-            <option value="eletrico">Eletrico</option>
-            
-        </select>
-    </label>
 
-    <div class="submit-container">
-        <button type="submit" class="submit">Enviar</button>
-    </div>
+            <select class="input-dados">
+                <option value="">Selecione uma opção</option>
+                <option value="calmo">Calmo</option>
+                <option value="bravo">Bravo</option>
+                <option value="eletrico">Eletrico</option>
+            </select>
+        
+        </label>
+
+        <!-- Botão de enviar -->
+        <div class="submit-container">
+            <button type="submit" class="submit">Enviar</button>
+        </div>
+
     </form>
+    
 </div>
   
 </body>
