@@ -62,7 +62,7 @@ body{
     width: 350px;
     height: 500px;
     box-shadow:#c59ba65b 0px 0px 20px 0px ;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 
   .submit-container{
@@ -90,4 +90,10 @@ p{
     font-family:"rooney-sans";
     font-size: 16px;
     font-weight: 300;
+}
+
+img{
+    margin: 30px 130px 0px;
+    width: 90px;
+    height: 90px;
 }
