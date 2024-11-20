@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .RooneySansBlack{
@@ -88,7 +89,6 @@ h1{
     box-shadow: #85344a5b 0px 0px 20px 0px ;
     animation-duration: 1.7s;
     animation-name: slidein;
-
 }
 
 .cadastro::-webkit-scrollbar{
@@ -176,12 +176,12 @@ input[type = "date"]{
 
 
 @keyframes slidein {
-    from {
-      right: -50%;  
+    0% {
+        transform: translateX(100%);
     }
-  
-    to {
-      margin-right:0;      
+
+    100% {
+      transform: translateX(0%);     
     }
   }
 
