@@ -137,6 +137,7 @@ h1{
 
 .input-dados{
     border: none;
+    appearance: none;
     background-color: white;
     width: 390px;
     height: 40px;
@@ -146,6 +147,11 @@ h1{
     font-family:"rooney-sans";
     font-size: 16px;
     font-weight: 300;
+    
+}
+
+.input-dados:focus{
+    outline: none;
 }
 
 .input-radio{
@@ -185,3 +191,11 @@ input[type = "date"]{
     }
   }
 
+
+  .spanRequired{
+    display: flex;
+    flex-direction: column;
+    color: #fa2626;
+    font-size: 16px;
+    display: none;
+  }

@@ -10,6 +10,8 @@
     <!-- Fontes -->
     <link rel="stylesheet" href="https://use.typekit.net/jzf8mlw.css">
 
+    <script src="scripts/validarForm.js"></script>
+
 </head>
 <body>
     <div class="logo">
@@ -20,11 +22,13 @@
         <header>    
     <h2>Cadastre seu pet</h2>
         </header>
-        <form action="controlador/index.html" method="get">
+        <form id="formPet">
 
         <!-- Cadastro nome -->
         <label class="title-label">Nome <br>
-            <input type="text" placeholder=" Digite o nome do animal" name="Nome" class="input-dados">
+            <input type="text" placeholder=" Digite o nome do animal" name="Nome" class="input-dados required" oninput="nameValidate">
+            
+            <span class="spanRequired">*Coloque o nome do seu pet</span>
         </label>
             
         <!-- Cadastro especie -->
@@ -37,36 +41,41 @@
                 <option value="Gato">Gato</option>
             </select>
 
+            <span class="spanRequired">*Escolha uma das opções</span>
         </label>
 
         <!-- Cadastro idade -->
         <label class="title-label">Data de Nascimento <br>
-            <input type="date" placeholder=" Digite a idade do animal" name="Idade" class="input-dados">
+            <input type="date" name="Idade" class="input-dados required">
+
+            <span class="spanRequired">*Coloque quando seu pet nasceu</span>
         </label>
             
         <!-- Cadastro raça -->
         <label class="title-label">Raça <br>
 
-            <select class="input-dados">
+            <select class="input-dados required">
                 <option value="">Selecione uma opção</option>
                 <option value="Chetos">Chetos</option>
                 <option value="Doritos">Doritos</option>
                 <option value="Crocatissimo">Crocatissimo</option>
             </select>
 
+            <span class="spanRequired">*Coloque a raça do seu pet</span>
         </label>
 
         <!-- Cadastro sexo -->
         <label class="title-label">Sexo <br>
     
-            <label class="text-label">Masculino
-                <input type="radio" name="genero" value="masculino" class="input-radio">
+            <label class="text-label">Macho
+                <input type="radio" name="genero" value="macho" class="input-radio ">
             </label>
                 
-            <label class="text-label">Feminino
-                <input type="radio" name="genero" value="feminino" class="input-radio">
+            <label class="text-label">Fêmea
+                <input type="radio" name="genero" value="femea" class="input-radio">
             </label>  
     
+            <span class="spanRequired">*Coloque o sexo do seu pet</span>
         </label>  
 
         <!-- Cadastro porte -->
@@ -84,7 +93,7 @@
                 <input type="radio" name="porte" value="pequeno" class="input-radio">
             </label>
          
-                    
+            <span class="spanRequired">*Coloque o tamanho do seu pet</span>        
         </label> 
                 
 
@@ -92,13 +101,14 @@
         <!-- Cadastro comportamento -->
         <label class="title-label">Comportamento <br>
 
-            <select class="input-dados">
+            <select class="input-dados required">
                 <option value="">Selecione uma opção</option>
                 <option value="calmo">Calmo</option>
                 <option value="bravo">Bravo</option>
                 <option value="eletrico">Eletrico</option>
             </select>
         
+            <span class="spanRequired">*Escolha um comportamento para seu pet</span>
         </label>
 
         <!-- Botão de enviar -->
