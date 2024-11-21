@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .RooneySansBlack{
@@ -32,17 +33,21 @@ body{
     background-color: #FA9CB4;
 }
 
+.backgroundContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
 .background{
     background-color: #ffeae6;
-    position: absolute;
-    right: 3vw;
-    top:3vh;
-    width: 1810px;
-    height: 880px;
+    animation: slidein 1.7s;
     border-radius: 30px;
-    animation-duration: 1.7s;
-    animation-name: slidein;
     padding: 35px;
+    box-shadow: #85344a5b 0px 0px 20px 0px ;
 }
 
 @keyframes slidein {
@@ -63,6 +68,7 @@ body{
     height: 500px;
     box-shadow:#c59ba65b 0px 0px 20px 0px ;
     border-radius: 20px;
+    padding: 2rem;
   }
 
   .submit-container{
