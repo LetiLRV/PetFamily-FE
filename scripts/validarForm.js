@@ -1,13 +1,18 @@
 const formPet = document.getElementById('formPet');
+ 
+const validarNome = document.querySelector("#name");
 
-function nameValidate(){    
-    const name = document.getElementById('name');
+const submit =  document.querySelector(".submit");
 
-    if(name.value == ""){
-        console.log("O Nome não pode ser nulo");
-        alert("coloca a poha de um nome");
+const erroName = document.querySelector(".erro")
 
-    } else{
-        console.log("O nome foi preenchido");
+submit.addEventListener("click", (e)=> {
+    e.preventDefault();
+
+    const valorNome = validarNome.value;
+
+    if (valorNome === ""){
+        erroName.textContent = "Por favor preencha";
     }
-}
+
+});
