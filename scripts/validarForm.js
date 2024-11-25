@@ -6,7 +6,7 @@ function enviarForm(e){
 
     console.log(typeof (nomePet));
 
-    if(nomePet != "string" || nomePet == null || nomePet == ""){
-        alert("Nome do pet está vazio ou incorreto");
+    if(typeof nomePet != "string" || nomePet == null || nomePet == ""){
+        console.log("Nome do pet está vazio ou incorreto");
     }
 }
