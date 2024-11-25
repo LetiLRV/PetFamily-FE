@@ -22,13 +22,11 @@
         <header>    
     <h2>Cadastre seu pet</h2>
         </header>
-        <form id="formPet">
+        <form id="formPet" onsubmit="enviarForm(event)">
 
         <!-- Cadastro nome -->
         <label class="title-label">Nome <br>
-            <input type="text" placeholder=" Digite o nome do animal" name="Nome" class="input-dados" id="name" oniput="nameValidate">
-            
-            <div class="erro"></div>
+            <input type="text" placeholder=" Digite o nome do animal" name="Nome" class="input-dados" id="nomePet">
 
             <span class="spanRequired">*Coloque o nome do seu pet</span>
         </label>
@@ -48,7 +46,7 @@
 
         <!-- Cadastro idade -->
         <label class="title-label">Data de Nascimento <br>
-            <input type="date" name="Idade" class="input-dados required">
+            <input type="date" name="Idade" class="input-dados">
 
             <span class="spanRequired">*Coloque quando seu pet nasceu</span>
         </label>
@@ -56,7 +54,7 @@
         <!-- Cadastro raça -->
         <label class="title-label">Raça <br>
 
-            <select class="input-dados required">
+            <select class="input-dados">
                 <option value="">Selecione uma opção</option>
                 <option value="Chetos">Chetos</option>
                 <option value="Doritos">Doritos</option>
@@ -95,7 +93,8 @@
                 <input type="radio" name="porte" value="pequeno" class="input-radio">
             </label>
          
-            <span class="spanRequired">*Coloque o tamanho do seu pet</span>        
+            <span class="spanRequired" name="porte">*Coloque o sexo do seu pet</span>    
+
         </label> 
                 
 
@@ -103,14 +102,14 @@
         <!-- Cadastro comportamento -->
         <label class="title-label">Comportamento <br>
 
-            <select class="input-dados required">
+            <select class="input-dados" name="comportamento">
                 <option value="">Selecione uma opção</option>
                 <option value="calmo">Calmo</option>
                 <option value="bravo">Bravo</option>
                 <option value="eletrico">Eletrico</option>
             </select>
         
-            <span class="spanRequired">*Escolha um comportamento para seu pet</span>
+            <span class="spanRequired" name="comportamento">*Escolha um comportamento para seu pet</span>
         </label>
 
         <!-- Botão de enviar -->

@@ -1,18 +1,12 @@
-const formPet = document.getElementById('formPet');
- 
-const validarNome = document.querySelector("#name");
 
-const submit =  document.querySelector(".submit");
+function enviarForm(e){
+    e.preventDefault()
 
-const erroName = document.querySelector(".erro")
+    const nomePet = (document.getElementById('nomePet')).value
 
-submit.addEventListener("click", (e)=> {
-    e.preventDefault();
+    console.log(typeof (nomePet));
 
-    const valorNome = validarNome.value;
-
-    if (valorNome === ""){
-        erroName.textContent = "Por favor preencha";
+    if(nomePet != "string" || nomePet == null || nomePet == ""){
+        alert("Nome do pet está vazio ou incorreto");
     }
-
-});
+}
