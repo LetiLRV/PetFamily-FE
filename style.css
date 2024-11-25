@@ -193,9 +193,9 @@ input[type = "date"]{
 
 
   .spanRequired{
-    display: flex;
+    display: none;
     flex-direction: column;
     color: #fa2626;
     font-size: 16px;
-    display: none;
+    margin: 0px 0px 0px 60px;
   }
