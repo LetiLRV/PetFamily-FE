@@ -15,6 +15,10 @@
 <body>
     <div class="logo">
         <h1> <img src="image/logo.png" alt="Pet Family"> Pet Family</h1>
+
+        <div class="mostrarPets-container">
+            <div class="mostrarPets"></div>
+        </div>
     </div>
 
     <div class="cadastro">
@@ -23,28 +27,26 @@
              <h2>Cadastre seu pet</h2>
         </header>
 
-        <form id="formPet" onsubmit="listarPets(event)">
+        <form id="formPet" onsubmit="inserirPet(); return false;">
 
+
+            
         <!-- Cadastro nome -->
 
         <label class="title-label">Nome</label>
-            <input type="text" placeholder=" Digite o nome do animal" class="input-dados" id="nomePet">
-
-            <span class="spanRequired" id="spanRequired">*Coloque o nome do seu pet</span>
-
-            
+            <input type="text" placeholder=" Digite o nome do animal" class="input-dados" id="nome">
+       
         <!-- Cadastro especie -->
 
         <label class="title-label" for="especie">Seu Pet</label>
 
             <select class="input-dados" id="especie">
                 <option value="">Selecione uma opção</option>
-                <option value="Cachorro">Cachorro</option>
-                <option value="Ave">Ave</option>
-                <option value="Gato">Gato</option>
+                <option value="3">Felino</option>
+                <option value="4">Canino</option>
+                <option value="5">Peixe</option>
+                <option value="6">Aranha</option>
             </select>
-
-            <span class="spanRequired">*Escolha uma das opções</span>
 
         <!-- Cadastro idade -->
 
@@ -52,7 +54,6 @@
 
             <input type="date" id="idade" class="input-dados">
 
-            <span class="spanRequired" id="idade">*Coloque quando seu pet nasceu</span>
             
         <!-- Cadastro raça -->
 
@@ -60,12 +61,13 @@
 
             <select class="input-dados" id="raca">
                 <option value="">Selecione uma opção</option>
-                <option value="Chetos">Chetos</option>
-                <option value="Doritos">Doritos</option>
-                <option value="Crocatissimo">Crocatissimo</option>
-            </select>
+                <option value="3">Shih Tzu</option>
+                <option value="4">Siamês</option>
+                <option value="5">Persa</option>
+                <option value="6">Sphynx</option>
+                <option value="7">Exótico</option>
 
-            <span class="spanRequired" id="raca">*Coloque a raça do seu pet</span>
+            </select>
 
 
         <!-- Cadastro sexo -->
@@ -73,42 +75,36 @@
         <label class="title-label" for="sexo">Sexo</label>  
     
             <label class="text-label" id="sexo" for="macho">Macho</label>
-                <input type="radio" name="genero" id="macho" value="macho" class="input-radio ">
+                <input type="radio" name="genero" id="macho" value="m" class="input-radio ">
                 
             <label class="text-label" id="sexo" for="femea">Fêmea</label>
-                <input type="radio" name="genero" id="femea" value="femea" class="input-radio">
-    
-                <span class="spanRequired" id="sexo">*Coloque o sexo do seu pet</span>
+                <input type="radio" name="genero" id="femea" value="f" class="input-radio">
 
         <!-- Cadastro porte -->
 
         <label class="title-label" for="porte">Tamanho</label> 
 
-            <label class="text-label" id="porte" for="grande">Grande</label>
-                <input type="radio" name="porte" id="grande" value="grade" class="input-radio">
-                    
-            <label class="text-label" id="porte" for="medio">Médio</label>
-                <input type="radio"  name="porte" id="medio" value="medio" class="input-radio">
-                    
-            <label class="text-label" id="porte" for="pequeno">Pequeno</label>
-                <input type="radio" name="porte" id="pequeno" value="pequeno" class="input-radio">
-         
-            <span class="spanRequired" id="porte">*Coloque o sexo do seu pet</span>    
- 
-                
+        <label class="text-label" id="porte" for="pequeno">Pequeno</label>
+        <input type="radio" name="porte" id="pequeno" value= "2" class="input-radio">
+
+        <label class="text-label" id="porte" for="medio">Médio</label>
+        <input type="radio"  name="porte" id="medio" value= "3" class="input-radio">
+
+        <label class="text-label" id="porte" for="grande">Grande</label>
+        <input type="radio" name="porte" id="grande" value= "4" class="input-radio">
+        
+        
         <!-- Cadastro comportamento -->
 
-        <label class="title-label" for="comportamento">Comportamento</label>
+        <!-- <label class="title-label" for="comportamento">Comportamento</label>
 
             <select class="input-dados" name="comportamento" id="comportamento">
                 <option value="">Selecione uma opção</option>
                 <option value="calmo">Calmo</option>
                 <option value="bravo">Bravo</option>
                 <option value="eletrico">Eletrico</option>
-            </select>
+            </select> -->
         
-            <span class="spanRequired" id="comportamento">*Escolha um comportamento para seu pet</span>
-
         <!-- Botão de enviar -->
 
         <div class="submit-container">
@@ -117,7 +113,8 @@
 
         </form>
     </div>
-  
+
+
         <script src="scripts/conexao.js"></script>
 </body>
 </html>

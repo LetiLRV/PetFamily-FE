@@ -120,6 +120,7 @@ h1{
 
 }
 
+
 .title-label{
     font-size: 24px;
     margin-top: 15px;
@@ -199,4 +200,27 @@ input[type = "date"]{
     color: #fa2626;
     font-size: 16px;
     margin: 0px 0px 0px 60px;
+  }
+
+  .mostrarPets{
+    background-color: #ffeae6;
+    width: 350px;
+    height: 150px;
+    color:#df8430;
+    box-shadow: #85344a5b 0px 0px 30px 0px ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .mostrarPets li{
+    margin: 10px 0px;
+  }
+
+  .mostrarPets-container{
+    display: flex;
+    margin: 30px 0px 0px 0px;
+    justify-content: center;
   }
