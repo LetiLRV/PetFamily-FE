@@ -7,7 +7,8 @@ async function listarPet() {
 
         // Verificar se temos pets para mostrar
         const pets = Array.isArray(data) ? data : [];
-        const petsContainer = document.getElementById("pets-container");
+        console.log(pets[0])
+        /* const petsContainer = document.getElementById("pets-container");
         petsContainer.innerHTML = ""; // Limpa a área antes de adicionar os novos
 
         pets.forEach(pet => {
@@ -23,7 +24,7 @@ async function listarPet() {
                 <p><strong>Comportamento:</strong> ${pet.comportamento}</p>
             `;
             petsContainer.appendChild(petCard);
-        });
+        }); */
     } catch (error) {
         console.log(error);
     }
